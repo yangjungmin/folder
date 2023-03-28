@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블럭,인라인</title>
+    <style>
+        *{margin:0; padding: 0;}
+        .one{background-color: blueviolet;
+        width: 300px;height: 300px;}
+        .inline{background-color: aquamarine;
+        width: 300px;height: 300px;}
+        .two{border: 1px solid red;}
+        .two span{background-color: bisque;}
+        .three{}
+        .three span{display: inline-block;
+        background-color: chocolate;
+        width: 150px; height: 30px;}
+
+        .inline-block img{width: 300px;}
+        .inline-block button{width: 100px;}
+        p a{background-color: cornflowerblue;}
+    
+    </style>
+</head>
+<body>
+    <div class="one">block요소</div>
+    <span class="inline">inline요소</span>
+
+    <div class="two">블럭요안에 <span>인라인요소를</span>적용합니다</div>
+    <div class="three">블럭요안에 <span>인라인요소를</span>적용합니다</div>
+    <div>
+        <h4>위첨자 태그</h4>
+        <p>2<sup>n</sup></p>
+        <h4>아래첨자 태그</h4>
+        <p>H<sub>2</sub>O</p>
+    
+    </div>
+
+    <div>
+        <h4>인라인요소 소개</h4>
+        <p>글자의 <b>굵기</b></p>
+        <p>글자의 <strong>굵기(중요한 내용임을 명시)</strong></p>
+        <hr>
+        <p>기울일체 글자를  <i>기울림</i></p>
+        <p>기울일체 글자를  <em>기울림(중요한 내용임을 명시)</em></p>
+        <p><a href="https://www.naver.com/" target="_blank">링크연결</a></p>
+    </div>
+
+    <div class="inline-block">
+        <h4>인라인요소 중 공간을 인식함</h4>
+        <img src="https://mblogthumb-phinf.pstatic.net/20160604_212/ppanppane_1465006723268vCwkh_PNG/%C0%CC%B5%F0%BE%DF%B7%CE%B0%ED_%281%29.png?type=w800" 
+        alt="">
+        <br>
+        <button>클릭</button>
+    </div>
+</body>
+</html>
