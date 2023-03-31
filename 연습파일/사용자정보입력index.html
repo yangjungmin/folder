@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="사용자정보입력style.css">
+</head>
+<body>
+    <H2>사용자정보 입력하기</H2>
+    <div class="첫째">
+        <form action="#">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="my-name">
+        <br><br>
+            <label for="age">나이</label>
+            <input type="number" value="0" id="age" name="my-age">
+        <br><br>
+            <button type="submit">눌러</button>
+            <button type="reset">초기화</button>
+        </form>
+    </div>
+
+    <div class="둘째">
+        <form action="#">
+            <label for="text">ID</label>
+            <input type="text" id="text" maxlength="5" placeholder="5자 이하">
+            <br><br>
+            <label for="number">password</label>
+            <input type="number" id="number" placeholder="10자 이상"
+            minlength="10">
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+
+    <div class="셋째">
+        <form action="#">
+            <label for="number">number</label>
+            <input type="number" id="number" min="0" max="30">
+
+            <label for="ra">range</label>
+            <input type="range" id="ra" max="10" step="2">
+
+            <label for="date">날짜</label>
+            <input type="date" id="date" min="2020-01-01" 
+            max="2035-12-31">
+        </form>
+    </div>
+
+    <div class="넷째">
+        <h3>select, 옵션 만들어주기</h3>
+        <form action="#">
+            <label for="lang">언어</label>
+            <select name="lang" id="lang">
+            <option value=""> --언어-- </option>
+            <option value="한국어">한국어</option>
+            <option value="중국어">중국어</option>
+            <option value="일본어">일본어</option>
+            <option value="영어">영어</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="다섯째">
+        <fieldset>
+            <legend>성별</legend>
+            <input type="radio" name="genger" checked>남자
+            <input type="radio" name="genger" checked>여자
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>지역</legend>
+            <input type="radio" name="area" checked>서울
+            <input type="radio" name="area" checked>부산
+            <input type="radio" name="area" checked>대구
+            <input type="radio" name="area" checked>창원
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>과일</legend>
+            <input type="checkbox" name="fruit" checked>복숭아
+            <input type="checkbox" name="fruit" checked>체리
+            <input type="checkbox" name="fruit" checked>수박
+            <input type="checkbox" name="fruit" checked>오렌지
+            <input type="checkbox" name="fruit" checked>레몬
+        </fieldset>
+
+    </div>
+    
+</body>
+</html>

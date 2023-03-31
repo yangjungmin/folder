@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0; width: 900px;}
+
+.표1>table{width: 100%; margin-top: 20px; border-collapse: collapse;}
+h1{text-align: center; margin-bottom: 20px; border-top: 1px solid #ccc;}
+.표1 table tr td{text-align: center; border: 2px solid green;}
+.표1 table tr th{text-align: center; border: 2px solid green;}
+.표1 table tr:nth-child(2n){background-color: aquamarine;}
+.표1 table tr:nth-child(2n+1){background-color: rgb(171, 171, 180);}
+.표1 table tr th:nth-child(2n),
+.표1 table tr td:nth-child(2n){background-color: burlywood;}
+
+.표2>table{width: 100%; margin-top: 20px; border-collapse: collapse;}
+h2{text-align: center; margin: 30px; border-top: 1px solid #ccc;}
+.표2 table tr th{border-bottom: 3px solid plum;}
+.표2 table tr td{border-bottom: 3px solid plum; text-align: center;}
+.표2 table tr:hover{background-color: aquamarine;}
+
+.표3>table{width: 100%; margin-top: 40px; border-collapse: collapse;}
+.표3 table tr th{border: 3px solid red;}
+.표3 table tr td{text-align: center; border: 3px solid red;}
+
+.표3 table colgroup col:nth-child(1){background-color: aqua;}
+.표3 table colgroup col:nth-child(2){background-color: blanchedalmond;}
+.표3 table colgroup col:nth-child(3){background-color: mediumseagreen;}
